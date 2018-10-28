@@ -1,12 +1,5 @@
 package com.waverley.tracker.dto;
 
-
-
-import java.util.List;
-
-/**
- * Created by Andrey on 11/11/2016.
- */
 public class   HistoryDTO {
 
     private int id;
@@ -81,7 +74,6 @@ public class   HistoryDTO {
     public void setDeviceInfo(String deviceInfo) {
         this.deviceInfo = deviceInfo;
     }
-
 
     @Override
     public String toString() {

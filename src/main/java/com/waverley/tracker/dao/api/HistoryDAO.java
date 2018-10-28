@@ -3,13 +3,8 @@ package com.waverley.tracker.dao.api;
 import com.waverley.tracker.model.History;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
-/**
- * Created by Andrey on 1/19/2017.
- */
 
 public interface HistoryDAO extends CrudRepository<History,Integer> {
 
@@ -27,7 +22,4 @@ public interface HistoryDAO extends CrudRepository<History,Integer> {
     List<History> findByHistoryUserID(Integer historyUserID);
 
     List<History> findByHistoryDeviceID(Integer historyDeviceID);
-
-
-
 }

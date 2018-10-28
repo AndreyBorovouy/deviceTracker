@@ -1,13 +1,9 @@
 package com.waverley.tracker.dto;
 
 import com.waverley.tracker.model.User;
-
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by Andrey on 11/11/2016.
- */
 public class DeviceDTO {
 
     private String deviceID;
@@ -163,5 +159,4 @@ public class DeviceDTO {
                 ", location='" + location +'\'' +
                 ", shared='"+shared;
     }
-
 }

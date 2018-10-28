@@ -1,14 +1,9 @@
 package com.waverley.tracker.dto;
 
-import com.waverley.tracker.model.Device;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by Andrey on 11/10/2016.
- */
 public class UserDTO {
 
     private String id;

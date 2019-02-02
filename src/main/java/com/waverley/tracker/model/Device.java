@@ -2,9 +2,6 @@ package com.waverley.tracker.model;
 
 import javax.persistence.*;
 
-/**
- * Created by Andrey on 11/11/2016.
- */
 @Entity
 @Table (name = "device")
 public class Device {

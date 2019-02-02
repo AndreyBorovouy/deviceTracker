@@ -1,5 +1,7 @@
 package com.waverley.tracker.dto;
 
+import com.waverley.tracker.model.Device;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,7 +39,6 @@ public class UserDTO {
     public Map<String, String> getUserMAp(){
         return this.userMAP;
     }
-//    private Map<String, String>
 
     public String getId() {
         return id;

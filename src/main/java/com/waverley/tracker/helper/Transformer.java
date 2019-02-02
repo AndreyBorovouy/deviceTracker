@@ -13,9 +13,6 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Andrey on 11/11/2016.
- */
 @Component
 public class Transformer {
 
@@ -29,12 +26,10 @@ public class Transformer {
         list.add("TransferDozerMapping.xml");
         Mapper mapper = new DozerBeanMapper(list);
         mapper.map(userDTO, user);
-
         return user;
     }
 
     public UserDTO userToUserDTO (User user){
-
         UserDTO userDTO = new UserDTO();
         List list = new ArrayList();
         list.add("TransferDozerMapping.xml");
@@ -45,7 +40,6 @@ public class Transformer {
     }
 
     public List<UserDTO> userListToUserDTOlist(List<User> userList){
-
         Transformer transformer = new Transformer();
         List<UserDTO> userDTOList = new ArrayList<>();
 
@@ -57,7 +51,6 @@ public class Transformer {
     }
 
     public List<User> userListDTOtoUserList(List<UserDTO> userDTOList){
-
         Transformer transformer = new Transformer();
         List<User> userList = new ArrayList<>();
 
@@ -65,9 +58,7 @@ public class Transformer {
             UserDTO userDTO = (UserDTO) userDTOList.get(i);
             User user = (User) transformer.userDTOtoUser(userDTO);
             userList.add(user);
-           // userList.add(transformer.userDTOtoUser((UserDTO)userDTOList.get(i)));
         }
-
         return userList;
     }
 
@@ -77,7 +68,6 @@ public class Transformer {
         list.add("TransferDozerMapping.xml");
         Mapper mapper = new DozerBeanMapper(list);
         mapper.map(device, deviceDTO);
-
         return deviceDTO;
     }
 
@@ -97,12 +87,10 @@ public class Transformer {
         List list = new ArrayList();
         list.add("TransferDozerMapping.xml");
         Mapper mapper = new DozerBeanMapper(list);
-
         mapper.map(deviceDTO, device);
-
         return device;
     }
-    // передача параметров объектов листа (List<DeviceDTO>) в параметрам объектов листа (List<Device>)
+
     public List<Device> deviceDTOListToDeviceList(List<DeviceDTO> deviceDTOList){
         Transformer transformer = new Transformer();
         List<Device> deviceList = new ArrayList<>();
@@ -121,9 +109,7 @@ public class Transformer {
         List list = new ArrayList();
         list.add("TransferDozerMapping.xml");
         Mapper mapper = new DozerBeanMapper(list);
-
         mapper.map(history, historyDTO);
-
         return historyDTO;
     }
 

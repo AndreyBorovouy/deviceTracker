@@ -1,6 +1,7 @@
 package com.waverley.tracker.dto;
 
 import com.waverley.tracker.model.User;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -133,7 +134,6 @@ public class DeviceDTO {
     public Map<String, String> getDeviceParamMap() {
         return deviceParamMap;
     }
-
 
     public String getShared() {
         return shared;

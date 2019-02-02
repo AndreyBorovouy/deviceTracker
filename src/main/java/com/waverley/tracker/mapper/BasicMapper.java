@@ -31,8 +31,6 @@ public class BasicMapper {
         for (E e : iterable) {
             list.add(mapper.map(e, toClass));
         }
-
         return list;
     }
-
 }

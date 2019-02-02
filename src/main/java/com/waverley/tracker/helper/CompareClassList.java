@@ -6,9 +6,6 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Andrey on 1/22/2017.
- */
 @Component
 public class CompareClassList<B> {
 
@@ -29,5 +26,4 @@ public class CompareClassList<B> {
         }
         return nb;
     }
-
 }
